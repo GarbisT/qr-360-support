@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · QR 360</title>
+<meta name="description" content="QR 360 support, privacy policy and terms of use.">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#F1F3F8; --text:#0B1220; --muted:#4B5568; --faint:#8A94A6; --glass:rgba(255,255,255,.62); --glass-border:rgba(255,255,255,.9); --shadow:rgba(15,30,60,.10); --accent:#6C5CE7; --orb1:rgba(108,92,231,.30); --orb2:rgba(226,64,122,.16); }
+@media (prefers-color-scheme: dark) { :root { --bg:#07090F; --text:#F3F6FC; --muted:#A3AEC2; --faint:#667085; --glass:rgba(22,28,42,.55); --glass-border:rgba(255,255,255,.12); --shadow:rgba(0,0,0,.4); --accent:#8B7FFF; --orb1:rgba(139,127,255,.30); --orb2:rgba(255,107,158,.14); } }
+* { box-sizing:border-box; }
+html, body { margin:0; }
+body { font-family:Inter, system-ui, -apple-system, sans-serif; color:var(--text); background:var(--bg); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden; min-height:100vh; }
+body::before, body::after { content:""; position:fixed; width:640px; height:640px; border-radius:50%; z-index:-1; pointer-events:none; }
+body::before { top:-260px; left:-220px; background:radial-gradient(circle, var(--orb1), transparent 65%); }
+body::after { bottom:-300px; right:-240px; background:radial-gradient(circle, var(--orb2), transparent 65%); }
+main { max-width:720px; margin:0 auto; padding:24px 16px 64px; }
+nav { display:flex; gap:16px; justify-content:center; margin-bottom:24px; font-size:15px; }
+nav a { color:var(--muted); text-decoration:none; } nav a[aria-current] { color:var(--text); font-weight:600; }
+h1 { font-size:clamp(28px, 6vw, 36px); line-height:1.15; letter-spacing:-.02em; margin:8px 0 4px; }
+.updated { color:var(--faint); font-size:14px; margin:0 0 16px; }
+.intro { font-size:17px; margin:0 0 24px; }
+.glass { background:var(--glass); border:1px solid var(--glass-border); border-radius:20px; padding:20px; margin-bottom:12px; box-shadow:0 8px 24px var(--shadow); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+h2 { font-size:17px; margin:0 0 8px; }
+p, li { color:var(--muted); margin:0 0 8px; overflow-wrap:anywhere; }
+ul { padding-left:20px; margin:0 0 8px; }
+a { color:var(--accent); }
+.hero { text-align:center; padding:16px 0 8px; }
+.hero img { width:96px; height:96px; border-radius:22px; box-shadow:0 12px 30px var(--shadow); }
+.hero p { font-size:17px; }
+.button { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; padding:12px 20px; border-radius:14px; }
+footer { text-align:center; color:var(--faint); font-size:14px; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+<div class="hero">
+<img src="assets/icon.png" alt="QR 360 icon">
+<h1>QR 360</h1>
+<p>Design QR codes that look like yours, and scan anything, without giving up your privacy.</p>
+</div>
+<section class="glass"><h2>Get help</h2>
+<p>Found a bug or have a question? In the app, open <strong>Settings › Report a bug</strong> to send us an email with the details we need. Or write to us directly:</p>
+<p><a class="button" href="mailto:boogieapps.help@gmail.com?subject=QR%20360">Email support</a></p>
+<p>We usually reply within a few days.</p></section>
+<section class="glass"><h2>Private by design</h2><ul>
+<li>Your codes, scans and photos stay on your phone.</li>
+<li>No account, no sign-in.</li>
+<li>No ads, no tracking, no analytics.</li>
+<li>Anonymous crash reports, only if you turn them on.</li>
+</ul><p>Read the full <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p></section>
+<section class="glass"><h2>Common questions</h2>
+<p><strong>My styled code won't scan.</strong> Check the "Scans well" badge under the preview in the designer. If it shows a warning, add contrast between the code and its background, make the logo smaller, or pick simpler dot and eye shapes. Always test a printed proof with more than one phone.</p>
+<p><strong>I forgot the password of a locked note.</strong> It can't be recovered. The password is never stored, so nobody, including us, can open the note without it.</p>
+<p><strong>How do I move my codes to a new phone?</strong> Your library is part of your normal iPhone backup, so restoring a backup brings it back. You can also export your history as a spreadsheet from Settings.</p></section>
+<footer>QR 360 · Garbis Tapacian · <a href="mailto:boogieapps.help@gmail.com">boogieapps.help@gmail.com</a></footer>
+</main>
+</body>
+</html>
